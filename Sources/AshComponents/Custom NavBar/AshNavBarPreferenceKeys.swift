@@ -28,7 +28,7 @@ public struct AshNavBarSubitlePreferenceKey: PreferenceKey {
 
 public struct AshNavBarBackButtonHiddenPreferenceKey: PreferenceKey {
     
-    public static var defaultValue: Bool = false
+    public static var defaultValue: Bool = true
     
     public static func reduce(value: inout Bool, nextValue: () -> Bool) {
         value = nextValue()
@@ -85,7 +85,7 @@ extension View {
         preference(key: AshNavBarIconNamePreferenceKey.self, value: systemName)
     }
     
-    public func customNavigationItem(title: String = "", subtitle: String? = nil, backButtonHidden: Bool = false, backgroundColor: Color? = nil, foregroundColor: Color? = nil, iconName: String? = nil) -> some View {
+    public func customNavigationItem(title: String = "", subtitle: String? = nil, backButtonHidden: Bool = true, backgroundColor: Color? = nil, foregroundColor: Color? = nil, iconName: String? = nil) -> some View {
         self
             .customNavigationTitle(title)
             .customNavigationSubtitle(subtitle)
