@@ -10,9 +10,9 @@ import SwiftUI
 
 public struct AshTabBarItemPreferenceKey: PreferenceKey {
 
-    static var defaultValue: Array<TabBarItem> = []
+    public static var defaultValue: Array<TabBarItem> = []
     
-    static func reduce(value: inout Array<TabBarItem>, nextValue: () -> Array<TabBarItem>) {
+    public static func reduce(value: inout Array<TabBarItem>, nextValue: () -> Array<TabBarItem>) {
         value += nextValue()
     }
 }
@@ -22,7 +22,7 @@ public struct TabBarItemViewModifier: ViewModifier {
     let tab: TabBarItem
     @Binding var selection: TabBarItem
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .opacity(selection == tab ? 1.0 : 0.0)
             .preference(key: AshTabBarItemPreferenceKey.self, value: [tab])

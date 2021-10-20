@@ -10,51 +10,51 @@ import SwiftUI
 
 public struct AshNavBarTitlePreferenceKey: PreferenceKey {
     
-    static var defaultValue: String = ""
+    public static var defaultValue: String = ""
     
-    static func reduce(value: inout String, nextValue: () -> String) {
+    public static func reduce(value: inout String, nextValue: () -> String) {
         value = nextValue()
     }
 }
 
 public struct AshNavBarSubitlePreferenceKey: PreferenceKey {
     
-    static var defaultValue: String? = nil
+    public static var defaultValue: String? = nil
     
-    static func reduce(value: inout String?, nextValue: () -> String?) {
+    public static func reduce(value: inout String?, nextValue: () -> String?) {
         value = nextValue()
     }
 }
 
 public struct AshNavBarBackButtonHiddenPreferenceKey: PreferenceKey {
     
-    static var defaultValue: Bool = false
+    public static var defaultValue: Bool = false
     
-    static func reduce(value: inout Bool, nextValue: () -> Bool) {
+    public static func reduce(value: inout Bool, nextValue: () -> Bool) {
         value = nextValue()
     }
 }
 
 public struct AshNavBarBackgroundColorPreferenceKey: PreferenceKey {
-    static var defaultValue: Color? = nil
+    public static var defaultValue: Color? = nil
     
-    static func reduce(value: inout Color?, nextValue: () -> Color?) {
+    public static func reduce(value: inout Color?, nextValue: () -> Color?) {
         value = nextValue()
     }
 }
 
 public struct AshNavBarForegroundColorPreferenceKey: PreferenceKey {
-    static var defaultValue: Color? = nil
+    public static var defaultValue: Color? = nil
     
-    static func reduce(value: inout Color?, nextValue: () -> Color?) {
+    public static func reduce(value: inout Color?, nextValue: () -> Color?) {
         value = nextValue()
     }
 }
 
 public struct AshNavBarIconNamePreferenceKey: PreferenceKey {
-    static var defaultValue: String? = nil
+    public static var defaultValue: String? = nil
     
-    static func reduce(value: inout String?, nextValue: () -> String?) {
+    public static func reduce(value: inout String?, nextValue: () -> String?) {
         value = nextValue()
     }
 }
