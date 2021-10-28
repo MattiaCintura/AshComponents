@@ -13,6 +13,7 @@ public struct AshTabBar: View {
     @Binding var selection: TabBarItem
     @Namespace private var namespace
     @State var localSelection: TabBarItem
+    @Environment(\.colorScheme) var colorScheme
     
     public var body: some View {
         tabBarVerion_2
@@ -105,9 +106,10 @@ extension AshTabBar {
             }
         }
         .padding(6)
-        .background(Color.white.ignoresSafeArea(edges: .bottom))
+        .background(
+            colorScheme == .light ? Color.white.ignoresSafeArea(edges: .bottom) : Color.black.ignoresSafeArea(edges: .bottom))
         .cornerRadius(10)
-        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 5)
+        .shadow(color: colorScheme == .light ? Color.black.opacity(0.2) : Color.gray.opacity(0.15), radius: 10, x: 0, y: 5)
         .padding(.horizontal)
     }
 }
