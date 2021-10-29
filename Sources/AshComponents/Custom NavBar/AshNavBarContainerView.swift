@@ -23,7 +23,7 @@ public struct AshNavBarContainerView<Content: View>: View {
     
     public var body: some View {
         VStack(spacing: 0) {
-            AshNavBar(showBackButton: showBackButton, backgroundColor: backgroundColor ?? .clear, foregroundColor: foregroundColor ?? .black, iconName: iconName, title: title, subTitle: subTitle)
+            AshNavBar(showBackButton: showBackButton, backgroundColor: backgroundColor ?? .clear, foregroundColor: foregroundColor ?? .primary, iconName: iconName, title: title, subTitle: subTitle)
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

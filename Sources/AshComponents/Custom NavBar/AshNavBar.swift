@@ -37,7 +37,7 @@ public struct AshNavBar: View {
 struct AshNavBar_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            AshNavBar(showBackButton: false, backgroundColor: .red, foregroundColor: .white, iconName: "house", title: "Home", subTitle: "This is the home view of your app")
+            AshNavBar(showBackButton: false, backgroundColor: .clear, foregroundColor: .primary, iconName: "house", title: "Home", subTitle: "This is the home view of your app")
             Spacer()
         }
     }
