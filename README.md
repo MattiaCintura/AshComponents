@@ -57,12 +57,12 @@ import AshComponents
 
 struct AshTabBar_Test: View {
     
-    @State private var tabSelection: TabBarItem = TabBarItem(iconName: "home", title: "Home", color: .blue)
+    @State private var tabSelection: TabBarItem = TabBarItem(iconName: "house", title: "Home", color: .blue)
     
     var body: some View {
         AshTabBarContainerView(selection: $tabSelection) {
             Color.blue
-                .customTabBarItem(tab: TabBarItem(iconName: "home", title: "Home", color: .blue), selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "house", title: "Home", color: .blue), selection: $tabSelection)
             Color.red
                 .customTabBarItem(tab: TabBarItem(iconName: "heart", title: "Favorites", color: .pink), selection: $tabSelection)
             Color.green
