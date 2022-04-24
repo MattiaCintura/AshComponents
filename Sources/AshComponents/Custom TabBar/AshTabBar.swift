@@ -28,7 +28,7 @@ public struct AshTabBar: View {
 struct AshTabBar_Previews: PreviewProvider {
     
     static let tabs: Array<TabBarItem> = [
-        .home, .favorite, .profile
+        TabBarItem(iconName: "house", title: "Home", color: .cyan)
     ]
     
     static var previews: some View {
