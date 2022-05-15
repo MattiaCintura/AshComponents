@@ -36,6 +36,7 @@ struct AshTabBar_Previews: PreviewProvider {
             Spacer()
             AshTabBar(tabs: tabs, selection: .constant(tabs.first!), localSelection: tabs.first!)
         }
+        .preferredColorScheme(.dark)
     }
 }
 
@@ -66,7 +67,7 @@ extension AshTabBar {
             }
         }
         .padding(6)
-        .background(Color.white.ignoresSafeArea(edges: .bottom))
+        .background(colorScheme == .light ? Color.white.ignoresSafeArea(edges: .bottom) : Color.black.ignoresSafeArea(edges: .bottom))
     }
     
     private func switchToTab(tab: TabBarItem) -> Void {
