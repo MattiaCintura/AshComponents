@@ -57,27 +57,25 @@ import AshComponents
 
 struct AshTabBar_Test: View {
     
-    @State private var tabSelection: TabBarItem = .home
+    @State private var tabSelection: TabBarItem = TabBarItem(iconName: "house", title: "Home", color: .blue)
     
     var body: some View {
         AshTabBarContainerView(selection: $tabSelection) {
             Color.blue
-                .customTabBarItem(tab: .home, selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "house", title: "Home", color: .blue), selection: $tabSelection)
             Color.red
-                .customTabBarItem(tab: .favorite, selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "heart", title: "Favorites", color: .pink), selection: $tabSelection)
             Color.green
-                .customTabBarItem(tab: .profile, selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "person", title: "Porfile", color: .green), selection: $tabSelection)
             Color.orange
-                .customTabBarItem(tab: .settings, selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "gear", title: "Settings", color: .grey), selection: $tabSelection)
             Color.mint
-                .customTabBarItem(tab: .cart, selection: $tabSelection)
+                .customTabBarItem(tab: TabBarItem(iconName: "cart", title: "Cart", color: .purple), selection: $tabSelection)
         }
     }
 }
 ```
 > You can customize the name, the color and the icon using the custom modifier `.customTabBarItem`.
-
-I already created a set of defaults **TabItems** that you can use as I showed in the example, you can also add and edit existent **TabItems** going to `TabBarItem.swift` 
 
 ### NavBar
 The NavBar implements the functionalities of the default SwiftUI NavigationView including the useage of NavigationLink or the custom NavLink.
