@@ -2,10 +2,10 @@
 AshComponents is a UI custom components package built using **SwiftUI** and avelable for iOS 15 and future versions.
 
 ## Demo
-<img src="https://user-images.githubusercontent.com/32592671/169589945-03242ecf-a4fe-462c-ba68-c97699da5c49.png" width="240"/> |
-<img src="https://user-images.githubusercontent.com/32592671/169590066-1e55192e-b350-4ade-91ab-a6d013231e05.png" width="240"/> |
-<img src="https://user-images.githubusercontent.com/32592671/169590386-ee7ea4c0-3630-440d-a521-35c89e5ac2a4.png" width="240"/> |
-<img src="https://user-images.githubusercontent.com/32592671/169590703-d2329e86-ce21-4593-9d10-a736bb204fb9.png" width="240"/>
+<img src="https://user-images.githubusercontent.com/32592671/169589945-03242ecf-a4fe-462c-ba68-c97699da5c49.png" width="200"/> |
+<img src="https://user-images.githubusercontent.com/32592671/169590066-1e55192e-b350-4ade-91ab-a6d013231e05.png" width="200"/> |
+<img src="https://user-images.githubusercontent.com/32592671/169590386-ee7ea4c0-3630-440d-a521-35c89e5ac2a4.png" width="200"/> |
+<img src="https://user-images.githubusercontent.com/32592671/169590703-d2329e86-ce21-4593-9d10-a736bb204fb9.png" width="200"/>
 
 
 ## Overview
